@@ -76,7 +76,6 @@ docker run --gpus all -p 8000:8000 \
 ```bash
 docker run -p 8000:8000 \
   -v codeguard_ollama:/app/ollama_models \
-  -e MODEL_DIR=/app/graphcodebert_bigvul_finetuned \
   dhalswapnil/codeguard_ai:latest
 ```
 
