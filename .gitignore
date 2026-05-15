@@ -1,0 +1,28 @@
+New-Item .gitignore -Force
+Set-Content .gitignore @"
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Dataset (too large for GitHub)
+dataset/
+*.csv
+
+# Model weights (too large — push to HuggingFace Hub instead)
+model/graphcodebert_bigvul_finetuned/
+model/graphcodebert_bigvul_output/
+model/codebert_bigvul_output/
+
+# Eval artifacts
+model/eval_output/
+
+# Ollama models
+ollama_models/
+
+# Misc
+*.log
+.DS_Store
+"@pipeline/frontend/
+ssh_keys/

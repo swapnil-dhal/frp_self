@@ -1,0 +1,13 @@
+# .dockerignore — place this at frp_self/ root
+__pycache__/
+*.pyc
+.venv/
+venv/
+dataset/
+*.csv
+.git/
+model/graphcodebert_bigvul_output/
+model/codebert_bigvul_output/
+model/eval_output/
+pipeline/frontend/
+pipeline/backend/ollama_models/
